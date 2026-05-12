@@ -4,31 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Dice Roller</h1>
     <p>Click the button to roll a die:</p>
-    <input id="diceValue" type="number" min="0" max="20"></input>
+    <input id="diceValue" type="number" min="0" max="20">
 
     <button id="rollDice">Roll Dice</button>
 
 <p id="Output"></p>
 
-<script>
-    function rollDice() {   
-        console.log("Rolling the dice...");
-        let diceValue1 = document.getElementById("diceValue");   // get the input element
-        let diceValue = diceValue1.value;                        // get the value of the input element
-        let diceRanomValue = Math.random() * diceValue;              // generate a random number between 0 and the value of the input element
-       
-       let fullDiceNumber = Math.ceil(diceRanomValue);              // round the random number up to the nearest integer
-       
-       let output = document.getElementById("Output");              // get the output element
-       output.innerText = fullDiceNumber;                                      // set the text of the output element to the random number
-    let button = document.getElementById("rollDice");
-
-    button.addEventListener();"click", rollDice);      // when the button is clicked, call the rollDice function
-
-</script>
 </body>
-</html
+</html>
