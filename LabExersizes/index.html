@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>page title</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="header">Header</h1>
+    </header>
+
+    <main>
+    <div class="row">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Articles</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h2>Article heading</h2>
+        <p>Paragraph...</p>
+        <a href="https://www.google.com/">More information...</a>
+        <div>
+        <section>
+  <h2>Shipping Address</h2>
+
+  <form id="orderForm">
+    <label>
+      Full Name:
+      <input type="text" name="name" required>
+    </label>
+    <br><br>
+
+    <label>
+      Address:
+      <input type="text" name="address" required>
+    </label>
+    <br><br>
+
+    <label>
+      City:
+      <input type="text" name="city" required>
+    </label>
+    <br><br>
+
+    <label>
+      Postcode:
+      <input type="text" name="postcode" required>
+    </label>
+    <br><br>
+
+    <button type="button" id="orderBtn">Order Now</button>
+  </form>
+</section>
+</div>
+      </article>
+      </div>
+
+      <aside id="aside">
+        <h2>Related</h2>
+        <ul>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Articles2</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>@copyright 2050 by nobody. all rights reversed</p>
+    </footer>
+
+    <script>
+document.getElementById("header").innerText ='Hello JavaScript';
+document.getElementById("aside").style.backgroundColor ='green';
+document.getElementById("orderBtn").addEventListener("click", function() {
+  alert("Your order will be shipped soon.");
+});
+</script>
+    </script>
+  </body>
+</html>

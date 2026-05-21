@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+header h1 {
+  font-size: 48px;
+}
+.row {
+  display: flex;
+}
+nav {
+  background-color: gold;
+  width: 30%;
+  height: 500px;
+  padding: 40px 20px;
+  font-size: 28px;
+}
+article {
+  background-color: whitesmoke;
+  width: 70%;
+  padding: 40px;
+  font-size: 26px;
+
+  background-image: url("Racoon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 220px;
+}
+.article-content {
+  max-width: 400px;
+}
+
+/* form box */
+.form-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #eaeaea;
+  border-radius: 10px;
+}
+
+/* form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 180px;
+}
+
+button {
+  margin-top: 20px;
+  align-self: center;
+  padding: 10px 20px;
+}
+article h2 {
+  font-size: 38px;
+}
+aside {
+  background-color: white;
+  padding-bottom: 20px;
+  font-size: 26px;
+}
+footer {
+  background: #222;
+  color: #eee;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 22px;
+}
