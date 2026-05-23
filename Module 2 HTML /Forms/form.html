@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head> </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
+      </nav>
+    </header>
+
+    <main>
+      <form method="POST" action="http://127.0.0.1:5500/form.html">
+        <!-- inputs -->
+        <div>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="First Name"
+          />
+        </div>
+
+        <div>
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+          />
+        </div>
+
+        <!-- Radio buttons -->
+        <div>
+
+          <p>Favourite language:</p>
+          <input type="radio" id="html" name="language" value="HTML" />
+          <label for="html">HTML</label>
+  
+          <input type="radio" id="css" name="language" value="CSS" />
+          <label for="css">CSS</label>
+      
+          <input type="radio" id="js" name="language" value="JavaScript" />
+          <label for="js">JavaScript</label>
+        </div>
+        <!-- Checkboxes -->
+        <div>
+
+          <p>Vehicles you own:</p>
+          <input type ="checkbox" id="toyota" name="vehicles" value="Toyota" />
+          <label for="toyota">Toyota</label>
+
+          <input type ="checkbox" id="honda" name="vehicles" value="Honda" />
+          <label for="honda">Honda</label>
+ 
+          <input type ="checkbox" id="ford" name="vehicles" value="Ford" />
+          <label for="ford">Ford</label>
+
+        </div>
+      
+      <div>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+
+    </form> 
+    </main>
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>
