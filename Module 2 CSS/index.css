@@ -1,0 +1,115 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #654321;
+    background-color:#65532140;
+}
+.style-me1 {
+    color: #FF0000;
+}
+#style-me2 {
+    color: #00FF;
+}
+.style-me1#style-me2 {
+  color: purple;
+}
+/* Put styles for questions 2.1 and 2.2 here */
+.my-descendants-are-styled p {
+    background-color: #ff0000
+}
+.my-children-are-styled > p {
+    background-color: lightgreen;
+}
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+.box {
+    background-color: #bc7ac840;
+    Margin: 1rem 1.5rem 1rem 2rem;
+    Padding: 6rem 6rem;
+    border: 0.05rem solid #ff0000;
+    width: 60vw;
+    height: 60vh !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    outline: 10px solid blue;
+    border-radius: 50%;
+    background-image: url("img1.png");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}   
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+.position-absolute {
+    background-color: greenyellow;
+    position:absolute;
+    top:0;
+    left:200px
+}
+.position-relative {
+    position:relative;
+    background-color: pink;
+}   
+.position-sticky {
+    position:sticky;
+    background-color: beige;
+    top:0;
+}
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+.text-style {
+    color:#be1ca0;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 100;
+    font-family: "Moo Lah Lah", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+a:link   {
+    color: green;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: underline;
+    ::hover
+}
+a:hover {
+    color: red;
+    text-decoration: solid;
+}
+a:active {
+    color: purple;
+    text-decoration: underline;
+}
+a:focus {
+    color: black;
+    text-decoration: dashed;
+}
+a:visited {
+    color: goldenrod;
+    font-style:italic;
+}
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+.calc-style {
+    width: 100vw;
+    background-color: aqua;
+    width: calc(100vw - 100px);
+}
+.fixed-width-col {
+    width:350px;
+    display: inline-block;
+}
+.fluid-col {
+    display:inline-block;
+    width: calc(100% - 355px);
+}
