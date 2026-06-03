@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #f4f0ea;
+    --secondary-color: #d8cfc2;
+    --accent-color: #a7937b;
+    --text-color: #2b2b2b;
+    --light-color: #ffffff;
+}
+body {
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-family: Georgia, "Times New Roman", serif;
+}
+main {
+    line-height: 1.6;
+    font-size: clamp(1rem, 1.1vw, 1.6rem);
+}
+.highlights,
+.employment,
+.education,
+.community,
+.sidebar {
+
+  background: var(--light-color);
+  border-radius: 30px;
+  padding: 0.3rem 1.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+.header {
+  display: flex;
+  align-items:center;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 2000px;
+  margin: 0 auto;
+
+background: var(--light-color);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.cv-picture-png {
+  width: clamp(120px, 22vw, 220px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 8px solid var(--light-color);
+}
+
+.profile-content {
+  flex: 1;
+  min-width: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin: 0 0 1rem;
+}
+h2 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+h3 {
+  font-size: clamp(1.1rem, 1.7vw, 1.6rem);
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .cv-picture-png {
+    width: 160px;
+  }
+}
