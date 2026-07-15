@@ -1,0 +1,16 @@
+.custom-nav {
+    position: relative;
+}
+.brand-centre {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.brand-centre{ 
+    color:#871843
+    
+} 
+.product-img {
+  height: 200px;
+  object-fit: contain;
+}
