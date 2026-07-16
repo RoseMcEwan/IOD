@@ -1,0 +1,122 @@
+openapi: 3.0.0
+
+info:
+  title: Calculator API
+  version: 1.0.0
+
+paths:
+  /calculator/add:
+    get:
+      summary: Add two numbers
+      parameters:
+        - name: num1
+          in: query
+          required: true
+          schema:
+            type: number
+
+        - name: num2
+          in: query
+          required: true
+          schema:
+            type: number
+
+      responses:
+        "200":
+          description: Successful calculation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  result:
+                    type: number
+
+  /calculator/subtract:
+    get:
+      summary: Subtract two numbers
+      parameters:
+        - name: num1
+          in: query
+          required: true
+          schema:
+            type: number
+
+        - name: num2
+          in: query
+          required: true
+          schema:
+            type: number
+
+      responses:
+        "200":
+          description: Successful calculation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  result:
+                    type: number
+
+  /calculator/multiply:
+    get:
+      summary: Multiply two numbers
+      parameters:
+        - name: num1
+          in: query
+          required: true
+          schema:
+            type: number
+
+        - name: num2
+          in: query
+          required: true
+          schema:
+            type: number
+
+      responses:
+        "200":
+          description: Successful calculation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  result:
+                    type: number
+
+  /calculator/divide:
+    get:
+      summary: Divide two numbers
+      parameters:
+        - name: num1
+          in: query
+          required: true
+          schema:
+            type: number
+
+        - name: num2
+          in: query
+          required: true
+          schema:
+            type: number
+
+      responses:
+        "200":
+          description: Successful calculation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  result:
+                    type: number

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+    <div class="calculator">
+
+        <h1>Calculator</h1>
+
+        <input
+            type="number"
+            id="num1"
+            placeholder="Enter first number">
+
+        <input
+            type="number"
+            id="num2"
+            placeholder="Enter second number">
+
+        <div class="operations">
+            <button id="add">+</button>
+            <button id="subtract">-</button>
+            <button id="multiply">*</button>
+            <button id="divide">/</button>
+        </div>
+
+        <div class="actions">
+            <button id="equals">=</button>
+            <button id="clear">Clear</button>
+        </div>
+
+      <h2>
+        Result: <span id="result"></span>
+      </h2>
+
+    </div>
+
+</body>
+
+  <script>
+//Buttons
+let selectedOperation = "";
+
+ document.querySelector("#add").addEventListener("click", () => {
+  selectedOperation = "add";
+ });
+
+document.querySelector("#subtract").addEventListener("click", () => {
+  selectedOperation = "subtract";
+ });
+
+ document.querySelector("#multiply").addEventListener("click", () => {
+  selectedOperation = "multiply";
+ });
+
+ document.querySelector("#divide").addEventListener("click", () => {
+  selectedOperation = "divide";
+ });
+
+ document.querySelector("#equals").addEventListener("click", () => {
+
+let num1 = Number (document.getElementById("num1").value);
+let num2 = Number (document.getElementById("num2").value);
+
+    fetch(`/calculator/${selectedOperation}?num1=${num1}&num2=${num2}`)
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("result").innerHTML = data.result;
+      });
+    });
+
+  </script>
+</html>
