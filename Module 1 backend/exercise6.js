@@ -1,9 +1,9 @@
 const book = {
-  title: "Flower",
-  description: "Species of flowers",
-  author: "Rose McEwan",
-  numberOfpages: 200,
-};
+title : "Flower", 
+description : "Species of flowers",
+author : "Rose McEwan",
+numberOfpages : 200,
+}
 
 // Accessing properties of the book object
 console.log(book);
